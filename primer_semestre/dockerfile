@@ -1,0 +1,18 @@
+FROM python:3
+
+ADD ./numeros-romanos /
+
+ADD ./punto /
+
+ADD ./sorting /
+
+ADD start.sh /
+
+RUN pip install parameterized
+
+RUN chmod +x /start.sh
+
+CMD ["/start.sh"]
+
+
+
